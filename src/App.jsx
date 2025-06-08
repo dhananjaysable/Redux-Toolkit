@@ -4,7 +4,7 @@ import { decrement, increment, reset } from "./store/slice/counterSlice";
 
 const App = () => {
   const dispatch = useDispatch();
-  const count = useSelector((state) => state.count.count);
+  const count = useSelector((state) => state.counter.count);
   return (
     <div>
       <h1>Count: {count}</h1>
